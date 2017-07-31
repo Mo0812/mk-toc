@@ -6,7 +6,7 @@
  * Version: 1.0
  * Author: Moritz Kanzler
  * Author URI: http://moritzkanzler.de
- * License: GPLv3
+ * License: GPLv2
  */
 
 function mk_toc_register_sources() {
