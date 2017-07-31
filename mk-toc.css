@@ -1,0 +1,20 @@
+.mk-toc-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mk-toc.mk-toc-h2 {
+    font-weight: bold;
+}
+
+.mk-toc.mk-toc-h3 {
+    padding-left: 15px;
+}
+
+.mk-toc.mk-toc-h4 {
+    padding-left: 40px;
+}
+
+.mk-toc.mk-toc-h5 {
+    padding-left: 60px;
+}
