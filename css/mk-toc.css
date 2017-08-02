@@ -1,4 +1,8 @@
-.mk-toc-list {
+.mk-toc.mk-toc-headline {
+    font-weight: bold;
+}
+
+.mk-toc.mk-toc-list {
     list-style: none;
     padding: 0;
 }
