@@ -4,6 +4,10 @@ This Plugin adds a Table of Contents to a post via inserting the shortcode [toc]
 
 **This Plugin is still in development and not stable!**
 
+## Appearance
+
+![Example ToC from this plugin](assets/screenshot-1.png)
+
 ## Installation
 There will be serveral ways to install this plugin. For now there is only the way to get it from this repository.
 ### Download
@@ -30,7 +34,13 @@ So a full toc shortcode could look like this: ```[toc title="My Headings" level_
 
 ## TinyMCE
 
-Because there are many shortcodes around in WordPress and no one can know them all it is easier to just use a button in the RTE of WordPress (TinyMCE) to generate a shortcode like **[toc]**. To do so, the plugin adds an button in the first row of the TinyMCE (only on posts) which will open a dialog. In this dialog the three parameters from above can be choose and after clicking "OK" the plugin will generate the shortcode **[toc]** with the choosen parameters at the cursor position in the text.
+Because there are many shortcodes around in WordPress and no one can know them all it is easier to just use a button in the RTE of WordPress (TinyMCE) to generate a shortcode like **[toc]**.
+ 
+To do so, the plugin adds an button in the first row of the TinyMCE (only on posts) which will open a dialog. In this dialog the three parameters from above can be choose and after clicking "OK" the plugin will generate the shortcode **[toc]** with the choosen parameters at the cursor position in the text.
+
+![Shortcode dialog in TinyMCE](assets/screenshot-3.png)
 
 ## Settings
+
+![General Settingscreen in Backend](assets/screenshot-2.png)
 *more coming soon*

@@ -6,7 +6,7 @@
  * Version: 1.0
  * Author: Moritz Kanzler
  * Author URI: http://moritzkanzler.de
- * License: GPLv2
+ * License: GPLv2 or later
  */
 
 include("php/mk-toc-shortcode.php");
