@@ -6,6 +6,11 @@
  * Time: 17:14
  */
 
+function mk_toc_mce_scripts() {
+    wp_enqueue_style('custom_tinymce_plugin', plugins_url( '../css/mk-toc-mce.css', __FILE__ ) );
+}
+add_action('admin_enqueue_scripts', 'mk_toc_mce_scripts');
+
 function mk_toc_tinymce_add_button() {
     global $typenow;
 

@@ -7,8 +7,8 @@
         // Add a button that opens a window
         editor.addButton('mk_toc_sc_button_key', {
             tooltip: 'MK Table of Contents einfügen',
-            image: url + '/../assets/toc-button-icon.png',
-            icon: 'dashicons dashicons-text',
+            //image: url + '/../assets/',
+            icon: 'icon dashicons-text',
             onclick: function() {
                 editor.windowManager.open({
                     title: 'MK Table of Contents Settings',
