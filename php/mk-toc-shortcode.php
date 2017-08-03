@@ -81,7 +81,7 @@ function mk_toc_parse_post_content($str, $level_begin, $level_end) {
     $output='<ul class="mk-toc mk-toc-list">';
     foreach($header_arr as $header) {
         $key = parseHeading($header->nodeValue);
-        $output .= "<li><a href='#$key' class='mk-toc mk-toc-$header->nodeName'>".utf8_decode($header->nodeValue)."</a></li>";
+        $output .= "<li><a href='#$key' class='mk-toc mk-toc-anchor-link mk-toc-$header->nodeName'>".utf8_decode($header->nodeValue)."</a></li>";
 
     }
     $output.='</ul>';

@@ -10,9 +10,12 @@ $(document).ready(function () {
     extendHeading("h5");
 
     if(mk_toc_jsvar.smooth == 1) {
-        $(".mk-toc").click(function () {
+        $(".mk-toc-anchor-link").click(function () {
             var tag = $(this).attr("href").replace('#', '');
             var el = $('a[name="' + tag + '"]');
+
+            history.pushState(null, null, '#' + tag);
+
             $("html, body").animate({scrollTop: el.offset().top - mk_toc_jsvar.topOffset}, 750);
             return false;
         });
