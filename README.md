@@ -1,6 +1,8 @@
 # MK Table of Contents Plugin
 
-This Plugin adds a Table of Contents to a post via inserting the shortcode [toc].
+This Plugin adds a Table of Contents to a post via inserting the shortcode [toc]. For a easy usablitity of the shortcode, the plugin adds a button to the TinyMCE Editor. Together with the extra button, there is a dialog which allows to configure the inserted Table of Contents and the shortcode.
+
+The Plugin also provides some general settings which the user can set in the admin area.
 
 **This Plugin is still in development and not stable!**
 
@@ -42,5 +44,9 @@ To do so, the plugin adds an button in the first row of the TinyMCE (only on pos
 
 ## Settings
 
+There are some general settings which can be set:
+* **Enable Smooth Scrolling**: If this option is "on" there will be a smooth scrolling animation if a user clicks on an anchor link in the ToC. It also sets the browser history right. If you turn it off the link anchor works just like a normal anchor in the web.
+* **Offset for heading anchors in text**: If *Smooth Scrolling* is enabled, this option controls how much offset will be added to the smooth scroll animation. This means that the clicked headline does not appear at the top of the browser window, but on the top plus the choosen offset. This is just for cosmetic purposes, but it can be really helpfull if your site uses a fixed header or something on top of content.
+* **Default Heading over the ToC**: If you dont enter any title in the ToC Shortcode settings, the title choosen in this option will be shown on top of the ToC.
+
 ![General Settingscreen in Backend](assets/screenshot-2.png)
-*more coming soon*
