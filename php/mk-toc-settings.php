@@ -52,10 +52,11 @@ function mk_toc_alwayson_field_cb( $args ) {
 function mk_toc_settings_page() {
     add_menu_page(
         'MK Table of Contents',
-        'MK TOC',
+        'MK ToC',
         'manage_options',
         'mk_toc_settings',
-        'mk_toc_settings_page_html'
+        'mk_toc_settings_page_html',
+        'dashicons-text'
     );
 }
 add_action( 'admin_menu', 'mk_toc_settings_page' );
