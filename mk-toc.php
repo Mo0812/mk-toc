@@ -14,8 +14,8 @@ include("php/mk-toc-settings.php");
 include("php/mk-toc-tinymce-addon.php");
 
 function mk_toc_register_sources() {
-    $topOffset = 120;
-    $smooth = 0;
+    $topOffset = get_option( 'mk_toc_top_offset', 0);
+    $smooth = get_option('mk_toc_smooth', 0);
 
     wp_register_style('mk_toc_css', plugins_url('css/mk-toc.css', __FILE__));
     wp_register_script('mk_toc_js', plugins_url('js/mk-toc.js', __FILE__));

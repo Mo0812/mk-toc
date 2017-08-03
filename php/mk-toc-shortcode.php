@@ -8,10 +8,12 @@
 
 function mk_toc_shortcode($args) {
     global $post;
-    $output = "";
+    $output = '<nav class="mk-toc mk-toc-nav">';
 
     if(isset($args['title']) && is_string($args['title']) && $args['title'] != "") {
-        $output .= '<p class="mk-toc mk-toc-headline">'.$args['title'].'</p>';
+        $output .= '<p class="mk-toc mk-toc-heading">'.$args['title'].'</p>';
+    } else if(get_option('mk_toc_default_heading', "") != "") {
+        $output .= '<p class="mk-toc mk-toc-heading">'.get_option('mk_toc_default_heading').'</p>';
     }
 
     $level_begin = 0;
@@ -30,7 +32,8 @@ function mk_toc_shortcode($args) {
         $level_end = $level_begin;
     }
 
-    $output.= mk_toc_parse_post_content($post->post_content, $level_begin, $level_end);
+    $output .= mk_toc_parse_post_content($post->post_content, $level_begin, $level_end);
+    $output .= '</nav>';
 
     return $output;
 }
