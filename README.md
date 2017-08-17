@@ -4,6 +4,8 @@ This Plugin adds a Table of Contents to a post via inserting the shortcode [toc]
 
 The Plugin also provides some general settings which the user can set in the admin area.
 
+Look also at [http://blog.moritzkanzler.de/portfolio/mk-table-of-contents/](http://blog.moritzkanzler.de/portfolio/mk-table-of-contents/) for more informations.
+
 **This Plugin is still in development and not stable!**
 
 ## Appearance

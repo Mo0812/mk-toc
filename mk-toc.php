@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: MK Table of Contents Plugin
- * Plugin URI:
+ * Plugin Name: MK Table of Contents Plugin (dev)
+ * Plugin URI: http://blog.moritzkanzler.de/portfolio/mk-table-of-contents/
  * Description: Adds a TOC to a post via shortcode.
  * Version: 1.0
  * Author: Moritz Kanzler

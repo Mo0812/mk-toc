@@ -14,6 +14,8 @@ This Plugin adds a TOC to a post via the shortcode `[toc]`.
 
 This Plugin adds a TOC to a post via the shortcode `[toc]`. To enter the shortcode with serveral options, the plugin insert a new button into the TinyMCE with a dialog, which easily allows to configure the `[toc]`-shortcode.
 
+Look also at [http://blog.moritzkanzler.de/portfolio/mk-table-of-contents/](http://blog.moritzkanzler.de/portfolio/mk-table-of-contents/) for more informations.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/mk-toc directory, or install the plugin through the WordPress plugins screen directly.
