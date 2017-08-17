@@ -39,8 +39,32 @@ The easiest way is to open up an issue at the github page for this project: [htt
 = 1.0 =
 * Inital Publishing
 
+= 1.1 =
+* Updated the plugins author information
+
+= 2.0 =
+* added clean shortcode output from tinymce when not all options are choosed
+
+= 2.1 =
+* Support for german language in settings
+
+= 2.2 =
+* Cleaned Plugin Title in the plugins overview
+
 == Upgrade Notice ==
 
 = 1.0 =
 * Try out the MK ToC Plugin :)
+
+= 1.1 =
+* Updated the plugin author information
+
+= 2.0 =
+* Get cleaner Shortcode outputs :)
+
+= 2.1 =
+* German language support now available :)
+
+= 2.2 =
+* Just minor fixes
 
