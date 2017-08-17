@@ -2,7 +2,7 @@
 Contributors: mojo101
 Donate link: http://blog.moritzkanzler.de
 Tags: table of contents, toc, publish, post
-Requires at least: 4.0
+Requires at least: 4.2
 Tested up to: 4.8
 Stable tag: 4.8
 License: GPLv2 or later

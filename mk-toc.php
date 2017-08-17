@@ -3,10 +3,12 @@
  * Plugin Name: MK Table of Contents Plugin (dev)
  * Plugin URI: http://blog.moritzkanzler.de/portfolio/mk-table-of-contents/
  * Description: Adds a TOC to a post via shortcode.
- * Version: 1.1
+ * Version: 2.0
  * Author: Moritz Kanzler
  * Author URI: http://moritzkanzler.de
  * License: GPLv2 or later
+ * Text Domain: mk_toc
+ * Domain Path: /lang
  */
 
 include("php/mk-toc-shortcode.php");
@@ -32,3 +34,8 @@ function mk_toc_enqueue_sources() {
     wp_enqueue_script('mk_toc_js');
 }
 add_action('wp_enqueue_scripts', 'mk_toc_enqueue_sources');
+
+function mk_toc_load_plugin_textdomain() {
+    load_plugin_textdomain( 'mk_toc', false, basename( dirname( __FILE__ ) ) . '/lang/' );
+}
+add_action( 'plugins_loaded', 'mk_toc_load_plugin_textdomain' );

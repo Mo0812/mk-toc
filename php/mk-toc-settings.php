@@ -27,7 +27,7 @@ function mk_toc_settings_init() {
         [
             'label_for' => 'mk_toc_smooth',
             'class' => 'mk_toc_setting',
-            'description' => 'Enable Smooth Scrolling Animation if a link anchor is clicked.'
+            'description' => __('Enable Smooth Scrolling Animation if a link anchor is clicked.', 'mk_toc')
         ]
     );
 
@@ -40,8 +40,8 @@ function mk_toc_settings_init() {
         [
             'label_for' => 'mk_toc_top_offset',
             'class' => 'mk_toc_setting',
-            'description' => 'Set an amount of px to add an offset from the top of the window, if a anchor link is used to scroll to a specific section.',
-            'warning' => 'This is only working when smooth scrolling is activated!'
+            'description' => __('Set an amount of px to add an offset from the top of the window, if a anchor link is used to scroll to a specific section.', 'mk_toc'),
+            'warning' => __('This is only working when smooth scrolling is activated!', 'mk_toc')
         ]
     );
 
@@ -54,7 +54,7 @@ function mk_toc_settings_init() {
         [
             'label_for' => 'mk_toc_default_heading',
             'class' => 'mk_toc_setting',
-            'description' => 'Sets the default heading over every ToC you insert. You can give a custom heading for every ToC if you change the title parameter in the shortcode.',
+            'description' => __('Sets the default heading over every ToC you insert. You can give a custom heading for every ToC if you change the title parameter in the shortcode.', 'mk_toc'),
         ]
     );
 }
@@ -136,7 +136,7 @@ function mk_toc_settings_page_html() {
             <?php
             settings_fields('mk_toc_settings');
             do_settings_sections('mk_toc_settings');
-            submit_button('Save Settings');
+            submit_button(__('Save Settings', 'mk_toc'));
             ?>
         </form>
     </div>

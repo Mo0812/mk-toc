@@ -11,7 +11,7 @@
             icon: 'icon dashicons-text',
             onclick: function() {
                 editor.windowManager.open({
-                    title: 'MK Table of Contents Settings',
+                    title: 'MK Table of Contents Settings1',
                     body: [
                         {
                             type: 'textbox',
@@ -40,7 +40,17 @@
                     width: 450,
                     height: 200,
                     onsubmit: function(e) {
-                        editor.insertContent('[toc title="' + e.data.toc_title + '" level_begin="' + toc_level_begin.value() + '" level_end="' + toc_level_end.value() + '"]');
+                        var tt = ''; var tlb = ''; var tle = '';
+                        if(e.data.toc_title != "") {
+                            tt = ' title="' + e.data.toc_title + '"';
+                        }
+                        if(toc_level_begin.value() !== "") {
+                            tlb = ' level_begin="' + toc_level_begin.value() + '"';
+                        }
+                        if(toc_level_end.value() != "") {
+                            tle = ' level_end="' + toc_level_end.value() + '"';
+                        }
+                        editor.insertContent('[toc' + tt + tlb + tle + ']');
                     }
 
                 });
